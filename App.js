@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Post from './components/post';
+import NavBar from './components/navbar'
 import PostCreator from './components/postCreator';
 import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
@@ -37,13 +38,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <AppBar position="static" color="default">
-          <Toolbar>
-            <Typography variant="h6" color="inherit">
-              My Social Network
-            </Typography>
-          </Toolbar>
-        </AppBar>
+        <NavBar />
 
         <PostCreator onCreate={this.insertPost.bind(this)} />
 

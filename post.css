@@ -13,3 +13,8 @@
     border: 0px;
     border-radius: 5px;
 }
+
+.createPost{
+    padding:20px;
+    margin:16px; 
+}
